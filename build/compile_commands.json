@@ -1,0 +1,8 @@
+[
+{
+  "directory": "E:/C++PRJ/battle-city/build",
+  "command": "E:/GCC/gcc/bin/g++.exe   -g -o CMakeFiles/BattleCity.dir/src/main.cpp.obj -c E:/C++PRJ/battle-city/src/main.cpp",
+  "file": "E:/C++PRJ/battle-city/src/main.cpp",
+  "output": "CMakeFiles/BattleCity.dir/src/main.cpp.obj"
+}
+]

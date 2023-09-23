@@ -1,0 +1,582 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "E:/CMake/share/cmake-3.27/Modules/CMakeDetermineSystem.cmake:211 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The system is: Windows - 10.0.19044 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "E:/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "E:/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "E:/CMake/share/cmake-3.27/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: E:/GCC/gcc/bin/gcc.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
+      
+      The C compiler identification is GNU, found in:
+        E:/C++PRJ/battle-city/build/CMakeFiles/3.27.4/CompilerIdC/a.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "E:/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "E:/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "E:/CMake/share/cmake-3.27/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: E:/GCC/gcc/bin/g++.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
+      
+      The CXX compiler identification is GNU, found in:
+        E:/C++PRJ/battle-city/build/CMakeFiles/3.27.4/CompilerIdCXX/a.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "E:/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "E:/CMake/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "E:/C++PRJ/battle-city/build/CMakeFiles/CMakeScratch/TryCompile-35q7k2"
+      binary: "E:/C++PRJ/battle-city/build/CMakeFiles/CMakeScratch/TryCompile-35q7k2"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'E:/C++PRJ/battle-city/build/CMakeFiles/CMakeScratch/TryCompile-35q7k2'
+        
+        Run Build Command(s): E:/CMake/bin/cmake.exe -E env VERBOSE=1 E:/GCC/gcc/bin/make.exe -f Makefile cmTC_ecf4b/fast
+        E:/GCC/gcc/bin/make.exe  -f CMakeFiles/cmTC_ecf4b.dir/build.make CMakeFiles/cmTC_ecf4b.dir/build
+        make[1]: Entering directory 'E:/C++PRJ/battle-city/build/CMakeFiles/CMakeScratch/TryCompile-35q7k2'
+        Building C object CMakeFiles/cmTC_ecf4b.dir/CMakeCCompilerABI.c.obj
+        E:/GCC/gcc/bin/gcc.exe   -v -o CMakeFiles/cmTC_ecf4b.dir/CMakeCCompilerABI.c.obj -c E:/CMake/share/cmake-3.27/Modules/CMakeCCompilerABI.c
+        Built by Equation Solution <http://www.Equation.com>.
+        Using built-in specs.
+        COLLECT_GCC=E:/GCC/gcc/bin/gcc.exe
+        Target: x86_64-w64-mingw32
+        Configured with: ../gcc-13.1.0/configure --host=x86_64-w64-mingw32 --build=x86_64-unknown-linux-gnu --target=x86_64-w64-mingw32 --prefix=/home/gfortran/gcc-home/binary/mingw32/native/x86_64/gcc/13.1.0 --with-sysroot=/home/gfortran/gcc-home/binary/mingw32/cross/x86_64/gcc/14-20230423 --with-gcc --with-gnu-ld --with-gnu-as --with-ld64=no --with-gmp=/home/gfortran/gcc-home/binary/mingw32/native/x86_64/gmp --with-mpfr=/home/gfortran/gcc-home/binary/mingw32/native/x86_64/mpfr --with-mpc=/home/gfortran/gcc-home/binary/mingw32/native/x86_64/mpc --with-cloog=/home/gfortran/gcc-home/binary/mingw32/native/x86_64/cloog --with-libiconv-prefix=/home/gfortran/gcc-home/binary/mingw32/native/x86_64/libiconv --with-diagnostics-color=auto --enable-cloog-backend=isl --enable-targets=i686-w64-mingw32,x86_64-w64-mingw32 --enable-lto --enable-languages=c,c++,fortran --enable-threads=win32 --enable-static --enable-shared=lto-plugin --enable-plugins --enable-ld=yes --enable-libquadmath --enable-libquadmath-support --enable-libgomp --disable-checking --disable-nls --disable-tls --disable-win32-registry
+        Thread model: win32
+        Supported LTO compression algorithms: zlib
+        gcc version 13.1.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ecf4b.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_ecf4b.dir/'
+         E:/GCC/gcc/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1.exe -quiet -v -iprefix E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -U_REENTRANT E:/CMake/share/cmake-3.27/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_ecf4b.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o C:\\Users\\radmi\\AppData\\Local\\Temp\\cc3ktoKr.s
+        GNU C17 (GCC) version 13.1.0 (x86_64-w64-mingw32)
+        	compiled by GNU C version 14.0.0 20230423 (experimental), GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "E:/GCC/gcc/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include"
+        ignoring nonexistent directory "/home/gfortran/gcc-home/binary/mingw32/cross/x86_64/gcc/14-20230423/home/gfortran/gcc-home/binary/mingw32/native/x86_64/gcc/13.1.0/lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"
+        ignoring duplicate directory "E:/GCC/gcc/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"
+        ignoring duplicate directory "E:/GCC/gcc/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"
+        ignoring nonexistent directory "/home/gfortran/gcc-home/binary/mingw32/cross/x86_64/gcc/14-20230423/mingw/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include
+         E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed
+         E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include
+        End of search list.
+        Compiler executable checksum: d7e6a4aaf723c0ed35d0daae80fd3f15
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ecf4b.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_ecf4b.dir/'
+         E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles/cmTC_ecf4b.dir/CMakeCCompilerABI.c.obj C:\\Users\\radmi\\AppData\\Local\\Temp\\cc3ktoKr.s
+        GNU assembler version 2.39 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.39
+        COMPILER_PATH=E:/GCC/gcc/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/;E:/GCC/gcc/bin/../libexec/gcc/;E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/
+        LIBRARY_PATH=E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/;E:/GCC/gcc/bin/../lib/gcc/;E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/;E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/;E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ecf4b.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_ecf4b.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_ecf4b.exe
+        E:/CMake/bin/cmake.exe -E rm -f CMakeFiles/cmTC_ecf4b.dir/objects.a
+        E:/GCC/gcc/bin/ar.exe qc CMakeFiles/cmTC_ecf4b.dir/objects.a @CMakeFiles/cmTC_ecf4b.dir/objects1.rsp
+        E:/GCC/gcc/bin/gcc.exe  -v -Wl,--whole-archive CMakeFiles/cmTC_ecf4b.dir/objects.a -Wl,--no-whole-archive -o cmTC_ecf4b.exe -Wl,--out-implib,libcmTC_ecf4b.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+        Built by Equation Solution <http://www.Equation.com>.
+        Using built-in specs.
+        COLLECT_GCC=E:/GCC/gcc/bin/gcc.exe
+        COLLECT_LTO_WRAPPER=E:/GCC/gcc/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe
+        Target: x86_64-w64-mingw32
+        Configured with: ../gcc-13.1.0/configure --host=x86_64-w64-mingw32 --build=x86_64-unknown-linux-gnu --target=x86_64-w64-mingw32 --prefix=/home/gfortran/gcc-home/binary/mingw32/native/x86_64/gcc/13.1.0 --with-sysroot=/home/gfortran/gcc-home/binary/mingw32/cross/x86_64/gcc/14-20230423 --with-gcc --with-gnu-ld --with-gnu-as --with-ld64=no --with-gmp=/home/gfortran/gcc-home/binary/mingw32/native/x86_64/gmp --with-mpfr=/home/gfortran/gcc-home/binary/mingw32/native/x86_64/mpfr --with-mpc=/home/gfortran/gcc-home/binary/mingw32/native/x86_64/mpc --with-cloog=/home/gfortran/gcc-home/binary/mingw32/native/x86_64/cloog --with-libiconv-prefix=/home/gfortran/gcc-home/binary/mingw32/native/x86_64/libiconv --with-diagnostics-color=auto --enable-cloog-backend=isl --enable-targets=i686-w64-mingw32,x86_64-w64-mingw32 --enable-lto --enable-languages=c,c++,fortran --enable-threads=win32 --enable-static --enable-shared=lto-plugin --enable-plugins --enable-ld=yes --enable-libquadmath --enable-libquadmath-support --enable-libgomp --disable-checking --disable-nls --disable-tls --disable-win32-registry
+        Thread model: win32
+        Supported LTO compression algorithms: zlib
+        gcc version 13.1.0 (GCC) 
+        COMPILER_PATH=E:/GCC/gcc/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/;E:/GCC/gcc/bin/../libexec/gcc/;E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/
+        LIBRARY_PATH=E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/;E:/GCC/gcc/bin/../lib/gcc/;E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/;E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/;E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ecf4b.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_ecf4b.'
+         E:/GCC/gcc/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -plugin E:/GCC/gcc/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/liblto_plugin.dll -plugin-opt=E:/GCC/gcc/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\radmi\\AppData\\Local\\Temp\\ccDfck3y.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=/home/gfortran/gcc-home/binary/mingw32/cross/x86_64/gcc/14-20230423 -m i386pep -Bdynamic -o cmTC_ecf4b.exe E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LE:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LE:/GCC/gcc/bin/../lib/gcc -LE:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LE:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LE:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LE:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. --whole-archive CMakeFiles/cmTC_ecf4b.dir/objects.a --no-whole-archive --out-implib libcmTC_ecf4b.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ecf4b.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_ecf4b.'
+        make[1]: Leaving directory 'E:/C++PRJ/battle-city/build/CMakeFiles/CMakeScratch/TryCompile-35q7k2'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "E:/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "E:/CMake/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include]
+          add: [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed]
+          add: [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include]
+        end of search list found
+        collapse include dir [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include] ==> [E:/GCC/gcc/lib/gcc/x86_64-w64-mingw32/13.1.0/include]
+        collapse include dir [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed] ==> [E:/GCC/gcc/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed]
+        collapse include dir [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include] ==> [E:/GCC/gcc/x86_64-w64-mingw32/include]
+        implicit include dirs: [E:/GCC/gcc/lib/gcc/x86_64-w64-mingw32/13.1.0/include;E:/GCC/gcc/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed;E:/GCC/gcc/x86_64-w64-mingw32/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "E:/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "E:/CMake/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld\\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: 'E:/C++PRJ/battle-city/build/CMakeFiles/CMakeScratch/TryCompile-35q7k2']
+        ignore line: []
+        ignore line: [Run Build Command(s): E:/CMake/bin/cmake.exe -E env VERBOSE=1 E:/GCC/gcc/bin/make.exe -f Makefile cmTC_ecf4b/fast]
+        ignore line: [E:/GCC/gcc/bin/make.exe  -f CMakeFiles/cmTC_ecf4b.dir/build.make CMakeFiles/cmTC_ecf4b.dir/build]
+        ignore line: [make[1]: Entering directory 'E:/C++PRJ/battle-city/build/CMakeFiles/CMakeScratch/TryCompile-35q7k2']
+        ignore line: [Building C object CMakeFiles/cmTC_ecf4b.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [E:/GCC/gcc/bin/gcc.exe   -v -o CMakeFiles/cmTC_ecf4b.dir/CMakeCCompilerABI.c.obj -c E:/CMake/share/cmake-3.27/Modules/CMakeCCompilerABI.c]
+        ignore line: [Built by Equation Solution <http://www.Equation.com>.]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=E:/GCC/gcc/bin/gcc.exe]
+        ignore line: [Target: x86_64-w64-mingw32]
+        ignore line: [Configured with: ../gcc-13.1.0/configure --host=x86_64-w64-mingw32 --build=x86_64-unknown-linux-gnu --target=x86_64-w64-mingw32 --prefix=/home/gfortran/gcc-home/binary/mingw32/native/x86_64/gcc/13.1.0 --with-sysroot=/home/gfortran/gcc-home/binary/mingw32/cross/x86_64/gcc/14-20230423 --with-gcc --with-gnu-ld --with-gnu-as --with-ld64=no --with-gmp=/home/gfortran/gcc-home/binary/mingw32/native/x86_64/gmp --with-mpfr=/home/gfortran/gcc-home/binary/mingw32/native/x86_64/mpfr --with-mpc=/home/gfortran/gcc-home/binary/mingw32/native/x86_64/mpc --with-cloog=/home/gfortran/gcc-home/binary/mingw32/native/x86_64/cloog --with-libiconv-prefix=/home/gfortran/gcc-home/binary/mingw32/native/x86_64/libiconv --with-diagnostics-color=auto --enable-cloog-backend=isl --enable-targets=i686-w64-mingw32,x86_64-w64-mingw32 --enable-lto --enable-languages=c,c++,fortran --enable-threads=win32 --enable-static --enable-shared=lto-plugin --enable-plugins --enable-ld=yes --enable-libquadmath --enable-libquadmath-support --enable-libgomp --disable-checking --disable-nls --disable-tls --disable-win32-registry]
+        ignore line: [Thread model: win32]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 13.1.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ecf4b.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_ecf4b.dir/']
+        ignore line: [ E:/GCC/gcc/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1.exe -quiet -v -iprefix E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -U_REENTRANT E:/CMake/share/cmake-3.27/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_ecf4b.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o C:\\Users\\radmi\\AppData\\Local\\Temp\\cc3ktoKr.s]
+        ignore line: [GNU C17 (GCC) version 13.1.0 (x86_64-w64-mingw32)]
+        ignore line: [	compiled by GNU C version 14.0.0 20230423 (experimental)  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "E:/GCC/gcc/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include"]
+        ignore line: [ignoring nonexistent directory "/home/gfortran/gcc-home/binary/mingw32/cross/x86_64/gcc/14-20230423/home/gfortran/gcc-home/binary/mingw32/native/x86_64/gcc/13.1.0/lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"]
+        ignore line: [ignoring duplicate directory "E:/GCC/gcc/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"]
+        ignore line: [ignoring duplicate directory "E:/GCC/gcc/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"]
+        ignore line: [ignoring nonexistent directory "/home/gfortran/gcc-home/binary/mingw32/cross/x86_64/gcc/14-20230423/mingw/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include]
+        ignore line: [ E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed]
+        ignore line: [ E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: d7e6a4aaf723c0ed35d0daae80fd3f15]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ecf4b.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_ecf4b.dir/']
+        ignore line: [ E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles/cmTC_ecf4b.dir/CMakeCCompilerABI.c.obj C:\\Users\\radmi\\AppData\\Local\\Temp\\cc3ktoKr.s]
+        ignore line: [GNU assembler version 2.39 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.39]
+        ignore line: [COMPILER_PATH=E:/GCC/gcc/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/]
+        ignore line: [E:/GCC/gcc/bin/../libexec/gcc/]
+        ignore line: [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/]
+        ignore line: [LIBRARY_PATH=E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/]
+        ignore line: [E:/GCC/gcc/bin/../lib/gcc/]
+        ignore line: [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+        ignore line: [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/]
+        ignore line: [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/]
+        ignore line: [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ecf4b.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_ecf4b.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_ecf4b.exe]
+        ignore line: [E:/CMake/bin/cmake.exe -E rm -f CMakeFiles/cmTC_ecf4b.dir/objects.a]
+        ignore line: [E:/GCC/gcc/bin/ar.exe qc CMakeFiles/cmTC_ecf4b.dir/objects.a @CMakeFiles/cmTC_ecf4b.dir/objects1.rsp]
+        ignore line: [E:/GCC/gcc/bin/gcc.exe  -v -Wl --whole-archive CMakeFiles/cmTC_ecf4b.dir/objects.a -Wl --no-whole-archive -o cmTC_ecf4b.exe -Wl --out-implib libcmTC_ecf4b.dll.a -Wl --major-image-version 0 --minor-image-version 0 ]
+        ignore line: [Built by Equation Solution <http://www.Equation.com>.]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=E:/GCC/gcc/bin/gcc.exe]
+        ignore line: [COLLECT_LTO_WRAPPER=E:/GCC/gcc/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe]
+        ignore line: [Target: x86_64-w64-mingw32]
+        ignore line: [Configured with: ../gcc-13.1.0/configure --host=x86_64-w64-mingw32 --build=x86_64-unknown-linux-gnu --target=x86_64-w64-mingw32 --prefix=/home/gfortran/gcc-home/binary/mingw32/native/x86_64/gcc/13.1.0 --with-sysroot=/home/gfortran/gcc-home/binary/mingw32/cross/x86_64/gcc/14-20230423 --with-gcc --with-gnu-ld --with-gnu-as --with-ld64=no --with-gmp=/home/gfortran/gcc-home/binary/mingw32/native/x86_64/gmp --with-mpfr=/home/gfortran/gcc-home/binary/mingw32/native/x86_64/mpfr --with-mpc=/home/gfortran/gcc-home/binary/mingw32/native/x86_64/mpc --with-cloog=/home/gfortran/gcc-home/binary/mingw32/native/x86_64/cloog --with-libiconv-prefix=/home/gfortran/gcc-home/binary/mingw32/native/x86_64/libiconv --with-diagnostics-color=auto --enable-cloog-backend=isl --enable-targets=i686-w64-mingw32,x86_64-w64-mingw32 --enable-lto --enable-languages=c,c++,fortran --enable-threads=win32 --enable-static --enable-shared=lto-plugin --enable-plugins --enable-ld=yes --enable-libquadmath --enable-libquadmath-support --enable-libgomp --disable-checking --disable-nls --disable-tls --disable-win32-registry]
+        ignore line: [Thread model: win32]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 13.1.0 (GCC) ]
+        ignore line: [COMPILER_PATH=E:/GCC/gcc/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/]
+        ignore line: [E:/GCC/gcc/bin/../libexec/gcc/]
+        ignore line: [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/]
+        ignore line: [LIBRARY_PATH=E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/]
+        ignore line: [E:/GCC/gcc/bin/../lib/gcc/]
+        ignore line: [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+        ignore line: [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/]
+        ignore line: [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/]
+        ignore line: [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ecf4b.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_ecf4b.']
+        link line: [ E:/GCC/gcc/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -plugin E:/GCC/gcc/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/liblto_plugin.dll -plugin-opt=E:/GCC/gcc/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\radmi\\AppData\\Local\\Temp\\ccDfck3y.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=/home/gfortran/gcc-home/binary/mingw32/cross/x86_64/gcc/14-20230423 -m i386pep -Bdynamic -o cmTC_ecf4b.exe E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LE:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LE:/GCC/gcc/bin/../lib/gcc -LE:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LE:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LE:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LE:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. --whole-archive CMakeFiles/cmTC_ecf4b.dir/objects.a --no-whole-archive --out-implib libcmTC_ecf4b.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o]
+          arg [E:/GCC/gcc/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [E:/GCC/gcc/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/liblto_plugin.dll] ==> ignore
+          arg [-plugin-opt=E:/GCC/gcc/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe] ==> ignore
+          arg [-plugin-opt=-fresolution=C:\\Users\\radmi\\AppData\\Local\\Temp\\ccDfck3y.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+          arg [-plugin-opt=-pass-through=-ladvapi32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lshell32] ==> ignore
+          arg [-plugin-opt=-pass-through=-luser32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+          arg [--sysroot=/home/gfortran/gcc-home/binary/mingw32/cross/x86_64/gcc/14-20230423] ==> ignore
+          arg [-m] ==> ignore
+          arg [i386pep] ==> ignore
+          arg [-Bdynamic] ==> search dynamic
+          arg [-o] ==> ignore
+          arg [cmTC_ecf4b.exe] ==> ignore
+          arg [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> obj [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o]
+          arg [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o] ==> obj [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o]
+          arg [-LE:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0] ==> dir [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0]
+          arg [-LE:/GCC/gcc/bin/../lib/gcc] ==> dir [E:/GCC/gcc/bin/../lib/gcc]
+          arg [-LE:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib] ==> dir [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib]
+          arg [-LE:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib] ==> dir [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib]
+          arg [-LE:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib] ==> dir [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib]
+          arg [-LE:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../..] ==> dir [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../..]
+          arg [--whole-archive] ==> ignore
+          arg [CMakeFiles/cmTC_ecf4b.dir/objects.a] ==> ignore
+          arg [--no-whole-archive] ==> ignore
+          arg [--out-implib] ==> ignore
+          arg [libcmTC_ecf4b.dll.a] ==> ignore
+          arg [--major-image-version] ==> ignore
+          arg [0] ==> ignore
+          arg [--minor-image-version] ==> ignore
+          arg [0] ==> ignore
+          arg [-lmingw32] ==> lib [mingw32]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lmoldname] ==> lib [moldname]
+          arg [-lmingwex] ==> lib [mingwex]
+          arg [-lmsvcrt] ==> lib [msvcrt]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [-ladvapi32] ==> lib [advapi32]
+          arg [-lshell32] ==> lib [shell32]
+          arg [-luser32] ==> lib [user32]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [-lmingw32] ==> lib [mingw32]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lmoldname] ==> lib [moldname]
+          arg [-lmingwex] ==> lib [mingwex]
+          arg [-lmsvcrt] ==> lib [msvcrt]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o] ==> obj [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o]
+        remove lib [msvcrt]
+        remove lib [msvcrt]
+        collapse obj [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> [E:/GCC/gcc/x86_64-w64-mingw32/lib/crt2.o]
+        collapse obj [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o] ==> [E:/GCC/gcc/lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o]
+        collapse obj [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o] ==> [E:/GCC/gcc/lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o]
+        collapse library dir [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0] ==> [E:/GCC/gcc/lib/gcc/x86_64-w64-mingw32/13.1.0]
+        collapse library dir [E:/GCC/gcc/bin/../lib/gcc] ==> [E:/GCC/gcc/lib/gcc]
+        collapse library dir [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib] ==> [E:/GCC/gcc/x86_64-w64-mingw32/lib]
+        collapse library dir [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib] ==> [E:/GCC/gcc/lib]
+        collapse library dir [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib] ==> [E:/GCC/gcc/x86_64-w64-mingw32/lib]
+        collapse library dir [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../..] ==> [E:/GCC/gcc/lib]
+        implicit libs: [mingw32;gcc;moldname;mingwex;kernel32;advapi32;shell32;user32;kernel32;mingw32;gcc;moldname;mingwex;kernel32]
+        implicit objs: [E:/GCC/gcc/x86_64-w64-mingw32/lib/crt2.o;E:/GCC/gcc/lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o;E:/GCC/gcc/lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o]
+        implicit dirs: [E:/GCC/gcc/lib/gcc/x86_64-w64-mingw32/13.1.0;E:/GCC/gcc/lib/gcc;E:/GCC/gcc/x86_64-w64-mingw32/lib;E:/GCC/gcc/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "E:/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "E:/CMake/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "E:/C++PRJ/battle-city/build/CMakeFiles/CMakeScratch/TryCompile-s1zy14"
+      binary: "E:/C++PRJ/battle-city/build/CMakeFiles/CMakeScratch/TryCompile-s1zy14"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'E:/C++PRJ/battle-city/build/CMakeFiles/CMakeScratch/TryCompile-s1zy14'
+        
+        Run Build Command(s): E:/CMake/bin/cmake.exe -E env VERBOSE=1 E:/GCC/gcc/bin/make.exe -f Makefile cmTC_cceae/fast
+        E:/GCC/gcc/bin/make.exe  -f CMakeFiles/cmTC_cceae.dir/build.make CMakeFiles/cmTC_cceae.dir/build
+        make[1]: Entering directory 'E:/C++PRJ/battle-city/build/CMakeFiles/CMakeScratch/TryCompile-s1zy14'
+        Building CXX object CMakeFiles/cmTC_cceae.dir/CMakeCXXCompilerABI.cpp.obj
+        E:/GCC/gcc/bin/g++.exe   -v -o CMakeFiles/cmTC_cceae.dir/CMakeCXXCompilerABI.cpp.obj -c E:/CMake/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp
+        Built by Equation Solution <http://www.Equation.com>.
+        Using built-in specs.
+        COLLECT_GCC=E:/GCC/gcc/bin/g++.exe
+        Target: x86_64-w64-mingw32
+        Configured with: ../gcc-13.1.0/configure --host=x86_64-w64-mingw32 --build=x86_64-unknown-linux-gnu --target=x86_64-w64-mingw32 --prefix=/home/gfortran/gcc-home/binary/mingw32/native/x86_64/gcc/13.1.0 --with-sysroot=/home/gfortran/gcc-home/binary/mingw32/cross/x86_64/gcc/14-20230423 --with-gcc --with-gnu-ld --with-gnu-as --with-ld64=no --with-gmp=/home/gfortran/gcc-home/binary/mingw32/native/x86_64/gmp --with-mpfr=/home/gfortran/gcc-home/binary/mingw32/native/x86_64/mpfr --with-mpc=/home/gfortran/gcc-home/binary/mingw32/native/x86_64/mpc --with-cloog=/home/gfortran/gcc-home/binary/mingw32/native/x86_64/cloog --with-libiconv-prefix=/home/gfortran/gcc-home/binary/mingw32/native/x86_64/libiconv --with-diagnostics-color=auto --enable-cloog-backend=isl --enable-targets=i686-w64-mingw32,x86_64-w64-mingw32 --enable-lto --enable-languages=c,c++,fortran --enable-threads=win32 --enable-static --enable-shared=lto-plugin --enable-plugins --enable-ld=yes --enable-libquadmath --enable-libquadmath-support --enable-libgomp --disable-checking --disable-nls --disable-tls --disable-win32-registry
+        Thread model: win32
+        Supported LTO compression algorithms: zlib
+        gcc version 13.1.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_cceae.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_cceae.dir/'
+         E:/GCC/gcc/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1plus.exe -quiet -v -iprefix E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -U_REENTRANT E:/CMake/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_cceae.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o C:\\Users\\radmi\\AppData\\Local\\Temp\\ccRo9i3W.s
+        GNU C++17 (GCC) version 13.1.0 (x86_64-w64-mingw32)
+        	compiled by GNU C version 14.0.0 20230423 (experimental), GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "E:/GCC/gcc/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include/c++/13.1.0"
+        ignoring duplicate directory "E:/GCC/gcc/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include/c++/13.1.0/x86_64-w64-mingw32"
+        ignoring duplicate directory "E:/GCC/gcc/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include/c++/13.1.0/backward"
+        ignoring duplicate directory "E:/GCC/gcc/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include"
+        ignoring nonexistent directory "/home/gfortran/gcc-home/binary/mingw32/cross/x86_64/gcc/14-20230423/home/gfortran/gcc-home/binary/mingw32/native/x86_64/gcc/13.1.0/lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"
+        ignoring duplicate directory "E:/GCC/gcc/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"
+        ignoring duplicate directory "E:/GCC/gcc/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"
+        ignoring nonexistent directory "/home/gfortran/gcc-home/binary/mingw32/cross/x86_64/gcc/14-20230423/mingw/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include/c++/13.1.0
+         E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include/c++/13.1.0/x86_64-w64-mingw32
+         E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include/c++/13.1.0/backward
+         E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include
+         E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed
+         E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include
+        End of search list.
+        Compiler executable checksum: 1a0e54417cec195c88f818b16ffedf9a
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_cceae.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_cceae.dir/'
+         E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles/cmTC_cceae.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\radmi\\AppData\\Local\\Temp\\ccRo9i3W.s
+        GNU assembler version 2.39 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.39
+        COMPILER_PATH=E:/GCC/gcc/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/;E:/GCC/gcc/bin/../libexec/gcc/;E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/
+        LIBRARY_PATH=E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/;E:/GCC/gcc/bin/../lib/gcc/;E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/;E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/;E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_cceae.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_cceae.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_cceae.exe
+        E:/CMake/bin/cmake.exe -E rm -f CMakeFiles/cmTC_cceae.dir/objects.a
+        E:/GCC/gcc/bin/ar.exe qc CMakeFiles/cmTC_cceae.dir/objects.a @CMakeFiles/cmTC_cceae.dir/objects1.rsp
+        E:/GCC/gcc/bin/g++.exe  -v -Wl,--whole-archive CMakeFiles/cmTC_cceae.dir/objects.a -Wl,--no-whole-archive -o cmTC_cceae.exe -Wl,--out-implib,libcmTC_cceae.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+        Built by Equation Solution <http://www.Equation.com>.
+        Using built-in specs.
+        COLLECT_GCC=E:/GCC/gcc/bin/g++.exe
+        COLLECT_LTO_WRAPPER=E:/GCC/gcc/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe
+        Target: x86_64-w64-mingw32
+        Configured with: ../gcc-13.1.0/configure --host=x86_64-w64-mingw32 --build=x86_64-unknown-linux-gnu --target=x86_64-w64-mingw32 --prefix=/home/gfortran/gcc-home/binary/mingw32/native/x86_64/gcc/13.1.0 --with-sysroot=/home/gfortran/gcc-home/binary/mingw32/cross/x86_64/gcc/14-20230423 --with-gcc --with-gnu-ld --with-gnu-as --with-ld64=no --with-gmp=/home/gfortran/gcc-home/binary/mingw32/native/x86_64/gmp --with-mpfr=/home/gfortran/gcc-home/binary/mingw32/native/x86_64/mpfr --with-mpc=/home/gfortran/gcc-home/binary/mingw32/native/x86_64/mpc --with-cloog=/home/gfortran/gcc-home/binary/mingw32/native/x86_64/cloog --with-libiconv-prefix=/home/gfortran/gcc-home/binary/mingw32/native/x86_64/libiconv --with-diagnostics-color=auto --enable-cloog-backend=isl --enable-targets=i686-w64-mingw32,x86_64-w64-mingw32 --enable-lto --enable-languages=c,c++,fortran --enable-threads=win32 --enable-static --enable-shared=lto-plugin --enable-plugins --enable-ld=yes --enable-libquadmath --enable-libquadmath-support --enable-libgomp --disable-checking --disable-nls --disable-tls --disable-win32-registry
+        Thread model: win32
+        Supported LTO compression algorithms: zlib
+        gcc version 13.1.0 (GCC) 
+        COMPILER_PATH=E:/GCC/gcc/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/;E:/GCC/gcc/bin/../libexec/gcc/;E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/
+        LIBRARY_PATH=E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/;E:/GCC/gcc/bin/../lib/gcc/;E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/;E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/;E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_cceae.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_cceae.'
+         E:/GCC/gcc/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -plugin E:/GCC/gcc/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/liblto_plugin.dll -plugin-opt=E:/GCC/gcc/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\radmi\\AppData\\Local\\Temp\\ccrd5v5Z.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=/home/gfortran/gcc-home/binary/mingw32/cross/x86_64/gcc/14-20230423 -m i386pep -Bdynamic -o cmTC_cceae.exe E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LE:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LE:/GCC/gcc/bin/../lib/gcc -LE:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LE:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LE:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LE:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. --whole-archive CMakeFiles/cmTC_cceae.dir/objects.a --no-whole-archive --out-implib libcmTC_cceae.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_cceae.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_cceae.'
+        make[1]: Leaving directory 'E:/C++PRJ/battle-city/build/CMakeFiles/CMakeScratch/TryCompile-s1zy14'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "E:/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "E:/CMake/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include/c++/13.1.0]
+          add: [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include/c++/13.1.0/x86_64-w64-mingw32]
+          add: [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include/c++/13.1.0/backward]
+          add: [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include]
+          add: [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed]
+          add: [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include]
+        end of search list found
+        collapse include dir [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include/c++/13.1.0] ==> [E:/GCC/gcc/include/c++/13.1.0]
+        collapse include dir [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include/c++/13.1.0/x86_64-w64-mingw32] ==> [E:/GCC/gcc/include/c++/13.1.0/x86_64-w64-mingw32]
+        collapse include dir [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include/c++/13.1.0/backward] ==> [E:/GCC/gcc/include/c++/13.1.0/backward]
+        collapse include dir [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include] ==> [E:/GCC/gcc/lib/gcc/x86_64-w64-mingw32/13.1.0/include]
+        collapse include dir [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed] ==> [E:/GCC/gcc/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed]
+        collapse include dir [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include] ==> [E:/GCC/gcc/x86_64-w64-mingw32/include]
+        implicit include dirs: [E:/GCC/gcc/include/c++/13.1.0;E:/GCC/gcc/include/c++/13.1.0/x86_64-w64-mingw32;E:/GCC/gcc/include/c++/13.1.0/backward;E:/GCC/gcc/lib/gcc/x86_64-w64-mingw32/13.1.0/include;E:/GCC/gcc/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed;E:/GCC/gcc/x86_64-w64-mingw32/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "E:/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "E:/CMake/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld\\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: 'E:/C++PRJ/battle-city/build/CMakeFiles/CMakeScratch/TryCompile-s1zy14']
+        ignore line: []
+        ignore line: [Run Build Command(s): E:/CMake/bin/cmake.exe -E env VERBOSE=1 E:/GCC/gcc/bin/make.exe -f Makefile cmTC_cceae/fast]
+        ignore line: [E:/GCC/gcc/bin/make.exe  -f CMakeFiles/cmTC_cceae.dir/build.make CMakeFiles/cmTC_cceae.dir/build]
+        ignore line: [make[1]: Entering directory 'E:/C++PRJ/battle-city/build/CMakeFiles/CMakeScratch/TryCompile-s1zy14']
+        ignore line: [Building CXX object CMakeFiles/cmTC_cceae.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: [E:/GCC/gcc/bin/g++.exe   -v -o CMakeFiles/cmTC_cceae.dir/CMakeCXXCompilerABI.cpp.obj -c E:/CMake/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Built by Equation Solution <http://www.Equation.com>.]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=E:/GCC/gcc/bin/g++.exe]
+        ignore line: [Target: x86_64-w64-mingw32]
+        ignore line: [Configured with: ../gcc-13.1.0/configure --host=x86_64-w64-mingw32 --build=x86_64-unknown-linux-gnu --target=x86_64-w64-mingw32 --prefix=/home/gfortran/gcc-home/binary/mingw32/native/x86_64/gcc/13.1.0 --with-sysroot=/home/gfortran/gcc-home/binary/mingw32/cross/x86_64/gcc/14-20230423 --with-gcc --with-gnu-ld --with-gnu-as --with-ld64=no --with-gmp=/home/gfortran/gcc-home/binary/mingw32/native/x86_64/gmp --with-mpfr=/home/gfortran/gcc-home/binary/mingw32/native/x86_64/mpfr --with-mpc=/home/gfortran/gcc-home/binary/mingw32/native/x86_64/mpc --with-cloog=/home/gfortran/gcc-home/binary/mingw32/native/x86_64/cloog --with-libiconv-prefix=/home/gfortran/gcc-home/binary/mingw32/native/x86_64/libiconv --with-diagnostics-color=auto --enable-cloog-backend=isl --enable-targets=i686-w64-mingw32,x86_64-w64-mingw32 --enable-lto --enable-languages=c,c++,fortran --enable-threads=win32 --enable-static --enable-shared=lto-plugin --enable-plugins --enable-ld=yes --enable-libquadmath --enable-libquadmath-support --enable-libgomp --disable-checking --disable-nls --disable-tls --disable-win32-registry]
+        ignore line: [Thread model: win32]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 13.1.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_cceae.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_cceae.dir/']
+        ignore line: [ E:/GCC/gcc/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1plus.exe -quiet -v -iprefix E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -U_REENTRANT E:/CMake/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_cceae.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o C:\\Users\\radmi\\AppData\\Local\\Temp\\ccRo9i3W.s]
+        ignore line: [GNU C++17 (GCC) version 13.1.0 (x86_64-w64-mingw32)]
+        ignore line: [	compiled by GNU C version 14.0.0 20230423 (experimental)  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "E:/GCC/gcc/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include/c++/13.1.0"]
+        ignore line: [ignoring duplicate directory "E:/GCC/gcc/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include/c++/13.1.0/x86_64-w64-mingw32"]
+        ignore line: [ignoring duplicate directory "E:/GCC/gcc/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include/c++/13.1.0/backward"]
+        ignore line: [ignoring duplicate directory "E:/GCC/gcc/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include"]
+        ignore line: [ignoring nonexistent directory "/home/gfortran/gcc-home/binary/mingw32/cross/x86_64/gcc/14-20230423/home/gfortran/gcc-home/binary/mingw32/native/x86_64/gcc/13.1.0/lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"]
+        ignore line: [ignoring duplicate directory "E:/GCC/gcc/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"]
+        ignore line: [ignoring duplicate directory "E:/GCC/gcc/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"]
+        ignore line: [ignoring nonexistent directory "/home/gfortran/gcc-home/binary/mingw32/cross/x86_64/gcc/14-20230423/mingw/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include/c++/13.1.0]
+        ignore line: [ E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include/c++/13.1.0/x86_64-w64-mingw32]
+        ignore line: [ E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include/c++/13.1.0/backward]
+        ignore line: [ E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include]
+        ignore line: [ E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed]
+        ignore line: [ E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 1a0e54417cec195c88f818b16ffedf9a]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_cceae.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_cceae.dir/']
+        ignore line: [ E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles/cmTC_cceae.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\radmi\\AppData\\Local\\Temp\\ccRo9i3W.s]
+        ignore line: [GNU assembler version 2.39 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.39]
+        ignore line: [COMPILER_PATH=E:/GCC/gcc/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/]
+        ignore line: [E:/GCC/gcc/bin/../libexec/gcc/]
+        ignore line: [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/]
+        ignore line: [LIBRARY_PATH=E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/]
+        ignore line: [E:/GCC/gcc/bin/../lib/gcc/]
+        ignore line: [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+        ignore line: [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/]
+        ignore line: [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/]
+        ignore line: [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_cceae.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_cceae.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_cceae.exe]
+        ignore line: [E:/CMake/bin/cmake.exe -E rm -f CMakeFiles/cmTC_cceae.dir/objects.a]
+        ignore line: [E:/GCC/gcc/bin/ar.exe qc CMakeFiles/cmTC_cceae.dir/objects.a @CMakeFiles/cmTC_cceae.dir/objects1.rsp]
+        ignore line: [E:/GCC/gcc/bin/g++.exe  -v -Wl --whole-archive CMakeFiles/cmTC_cceae.dir/objects.a -Wl --no-whole-archive -o cmTC_cceae.exe -Wl --out-implib libcmTC_cceae.dll.a -Wl --major-image-version 0 --minor-image-version 0 ]
+        ignore line: [Built by Equation Solution <http://www.Equation.com>.]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=E:/GCC/gcc/bin/g++.exe]
+        ignore line: [COLLECT_LTO_WRAPPER=E:/GCC/gcc/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe]
+        ignore line: [Target: x86_64-w64-mingw32]
+        ignore line: [Configured with: ../gcc-13.1.0/configure --host=x86_64-w64-mingw32 --build=x86_64-unknown-linux-gnu --target=x86_64-w64-mingw32 --prefix=/home/gfortran/gcc-home/binary/mingw32/native/x86_64/gcc/13.1.0 --with-sysroot=/home/gfortran/gcc-home/binary/mingw32/cross/x86_64/gcc/14-20230423 --with-gcc --with-gnu-ld --with-gnu-as --with-ld64=no --with-gmp=/home/gfortran/gcc-home/binary/mingw32/native/x86_64/gmp --with-mpfr=/home/gfortran/gcc-home/binary/mingw32/native/x86_64/mpfr --with-mpc=/home/gfortran/gcc-home/binary/mingw32/native/x86_64/mpc --with-cloog=/home/gfortran/gcc-home/binary/mingw32/native/x86_64/cloog --with-libiconv-prefix=/home/gfortran/gcc-home/binary/mingw32/native/x86_64/libiconv --with-diagnostics-color=auto --enable-cloog-backend=isl --enable-targets=i686-w64-mingw32,x86_64-w64-mingw32 --enable-lto --enable-languages=c,c++,fortran --enable-threads=win32 --enable-static --enable-shared=lto-plugin --enable-plugins --enable-ld=yes --enable-libquadmath --enable-libquadmath-support --enable-libgomp --disable-checking --disable-nls --disable-tls --disable-win32-registry]
+        ignore line: [Thread model: win32]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 13.1.0 (GCC) ]
+        ignore line: [COMPILER_PATH=E:/GCC/gcc/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/]
+        ignore line: [E:/GCC/gcc/bin/../libexec/gcc/]
+        ignore line: [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/]
+        ignore line: [LIBRARY_PATH=E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/]
+        ignore line: [E:/GCC/gcc/bin/../lib/gcc/]
+        ignore line: [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+        ignore line: [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/]
+        ignore line: [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/]
+        ignore line: [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_cceae.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_cceae.']
+        link line: [ E:/GCC/gcc/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -plugin E:/GCC/gcc/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/liblto_plugin.dll -plugin-opt=E:/GCC/gcc/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\radmi\\AppData\\Local\\Temp\\ccrd5v5Z.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=/home/gfortran/gcc-home/binary/mingw32/cross/x86_64/gcc/14-20230423 -m i386pep -Bdynamic -o cmTC_cceae.exe E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LE:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LE:/GCC/gcc/bin/../lib/gcc -LE:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LE:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LE:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LE:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. --whole-archive CMakeFiles/cmTC_cceae.dir/objects.a --no-whole-archive --out-implib libcmTC_cceae.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o]
+          arg [E:/GCC/gcc/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [E:/GCC/gcc/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/liblto_plugin.dll] ==> ignore
+          arg [-plugin-opt=E:/GCC/gcc/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe] ==> ignore
+          arg [-plugin-opt=-fresolution=C:\\Users\\radmi\\AppData\\Local\\Temp\\ccrd5v5Z.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+          arg [-plugin-opt=-pass-through=-ladvapi32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lshell32] ==> ignore
+          arg [-plugin-opt=-pass-through=-luser32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
+          arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+          arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+          arg [--sysroot=/home/gfortran/gcc-home/binary/mingw32/cross/x86_64/gcc/14-20230423] ==> ignore
+          arg [-m] ==> ignore
+          arg [i386pep] ==> ignore
+          arg [-Bdynamic] ==> search dynamic
+          arg [-o] ==> ignore
+          arg [cmTC_cceae.exe] ==> ignore
+          arg [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> obj [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o]
+          arg [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o] ==> obj [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o]
+          arg [-LE:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0] ==> dir [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0]
+          arg [-LE:/GCC/gcc/bin/../lib/gcc] ==> dir [E:/GCC/gcc/bin/../lib/gcc]
+          arg [-LE:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib] ==> dir [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib]
+          arg [-LE:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib] ==> dir [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib]
+          arg [-LE:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib] ==> dir [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib]
+          arg [-LE:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../..] ==> dir [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../..]
+          arg [--whole-archive] ==> ignore
+          arg [CMakeFiles/cmTC_cceae.dir/objects.a] ==> ignore
+          arg [--no-whole-archive] ==> ignore
+          arg [--out-implib] ==> ignore
+          arg [libcmTC_cceae.dll.a] ==> ignore
+          arg [--major-image-version] ==> ignore
+          arg [0] ==> ignore
+          arg [--minor-image-version] ==> ignore
+          arg [0] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lmingw32] ==> lib [mingw32]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lmoldname] ==> lib [moldname]
+          arg [-lmingwex] ==> lib [mingwex]
+          arg [-lmsvcrt] ==> lib [msvcrt]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [-ladvapi32] ==> lib [advapi32]
+          arg [-lshell32] ==> lib [shell32]
+          arg [-luser32] ==> lib [user32]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [-lmingw32] ==> lib [mingw32]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lmoldname] ==> lib [moldname]
+          arg [-lmingwex] ==> lib [mingwex]
+          arg [-lmsvcrt] ==> lib [msvcrt]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o] ==> obj [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o]
+        remove lib [msvcrt]
+        remove lib [msvcrt]
+        collapse obj [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> [E:/GCC/gcc/x86_64-w64-mingw32/lib/crt2.o]
+        collapse obj [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o] ==> [E:/GCC/gcc/lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o]
+        collapse obj [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o] ==> [E:/GCC/gcc/lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o]
+        collapse library dir [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0] ==> [E:/GCC/gcc/lib/gcc/x86_64-w64-mingw32/13.1.0]
+        collapse library dir [E:/GCC/gcc/bin/../lib/gcc] ==> [E:/GCC/gcc/lib/gcc]
+        collapse library dir [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib] ==> [E:/GCC/gcc/x86_64-w64-mingw32/lib]
+        collapse library dir [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib] ==> [E:/GCC/gcc/lib]
+        collapse library dir [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib] ==> [E:/GCC/gcc/x86_64-w64-mingw32/lib]
+        collapse library dir [E:/GCC/gcc/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../..] ==> [E:/GCC/gcc/lib]
+        implicit libs: [stdc++;mingw32;gcc;moldname;mingwex;kernel32;advapi32;shell32;user32;kernel32;mingw32;gcc;moldname;mingwex;kernel32]
+        implicit objs: [E:/GCC/gcc/x86_64-w64-mingw32/lib/crt2.o;E:/GCC/gcc/lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o;E:/GCC/gcc/lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o]
+        implicit dirs: [E:/GCC/gcc/lib/gcc/x86_64-w64-mingw32/13.1.0;E:/GCC/gcc/lib/gcc;E:/GCC/gcc/x86_64-w64-mingw32/lib;E:/GCC/gcc/lib]
+        implicit fwks: []
+      
+      
+...
