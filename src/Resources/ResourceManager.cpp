@@ -2,11 +2,13 @@
 #include "../Renderer/ShaderProgram.h"
 #include "../Renderer/Texture2D.h"
 #include "../Renderer/Sprite.h"
+#include "../Renderer/AnimatedSprite.h"
 #include <glm/vec2.hpp>
 
 #include <sstream>
 #include <fstream>
 #include <iostream>
+#include <vector>
 
 #define STB_IMAGE_IMPLEMENTATION
 #define STBI_ONLY_PNG
@@ -116,7 +118,8 @@ std::shared_ptr<Renderer::Sprite> ResourceManager::loadSprite(const std::string 
                                                               const std::string &shaderName,
                                                               const unsigned int spriteWidth,
                                                               const unsigned int spriteHeight,
-                                                              float rotation)
+                                                              float rotation,
+                                                              const std::string &subTextureName)
 {
     auto pTexture = getTexture(textureName);
     if (!pTexture)
@@ -130,6 +133,7 @@ std::shared_ptr<Renderer::Sprite> ResourceManager::loadSprite(const std::string 
         std::cerr << "Error get Shader: " << shaderName << "For sprite" << spriteName << std::endl;
     }
     std::shared_ptr<Renderer::Sprite> newSprite = m_sprites.emplace(spriteName, std::make_shared<Renderer::Sprite>(pTexture,
+                                                                                                                   subTextureName,
                                                                                                                    pShader,
                                                                                                                    glm::vec2(0.f, 0.f),
                                                                                                                    glm::vec2(spriteWidth, spriteHeight),
@@ -146,6 +150,77 @@ std::shared_ptr<Renderer::Sprite> ResourceManager::getSprite(const std::string &
     {
         return it->second;
     }
-    std::cerr << "Error get Shader: " << spriteName << std::endl;
+    std::cerr << "Error get Sprite: " << spriteName << std::endl;
     return nullptr;
+}
+
+std::shared_ptr<Renderer::AnimatedSprite> ResourceManager::loadAnimatedSprite(const std::string &spriteName,
+                                                                              const std::string &textureName,
+                                                                              const std::string &shaderName,
+                                                                              const unsigned int spriteWidth,
+                                                                              const unsigned int spriteHeight,
+                                                                              float rotation,
+                                                                              const std::string &subTextureName)
+{
+    auto pTexture = getTexture(textureName);
+    if (!pTexture)
+    {
+        std::cerr << "Error get Texture: " << textureName << "For sprite" << spriteName << std::endl;
+    }
+
+    auto pShader = getShaderProgram(shaderName);
+    if (!pShader)
+    {
+        std::cerr << "Error get Shader: " << shaderName << "For sprite" << spriteName << std::endl;
+    }
+    std::shared_ptr<Renderer::AnimatedSprite> newSprite = m_AnimatedSprites.emplace(spriteName, std::make_shared<Renderer::AnimatedSprite>(pTexture,
+                                                                                                                                           subTextureName,
+                                                                                                                                           pShader,
+                                                                                                                                           glm::vec2(0.f, 0.f),
+                                                                                                                                           glm::vec2(spriteWidth, spriteHeight),
+                                                                                                                                           rotation))
+                                                              .first->second;
+
+    return newSprite;
+}
+
+std::shared_ptr<Renderer::AnimatedSprite> ResourceManager::getAnimatedSprite(const std::string &spriteName)
+{
+    auto it = m_AnimatedSprites.find(spriteName);
+    if (it != m_AnimatedSprites.end())
+    {
+        return it->second;
+    }
+    std::cerr << "Error get Animated Sprite: " << spriteName << std::endl;
+    return nullptr;
+}
+
+std::shared_ptr<Renderer::Texture2D> ResourceManager::loadTextureAtlas(std::string textureName,
+                                                                       std::string texturePath,
+                                                                       std::vector<std::string> subTextures,
+                                                                       const unsigned int subTexturewidth,
+                                                                       const unsigned int subTextureHeight)
+{
+    auto pTexture = loadTextures(std::move(textureName), std::move(texturePath));
+    if (pTexture)
+    {
+        const unsigned int textureWidth = pTexture->width();
+        const unsigned int textureHeight = pTexture->height();
+        unsigned int currentTextureOffsetX = 0;
+        unsigned int currentTextureOffsetY = textureHeight;
+        for (const auto &currenSubTextureName : subTextures)
+        {
+            glm::vec2 leftBottomUV(static_cast<float>(currentTextureOffsetX) / textureWidth, static_cast<float>(currentTextureOffsetY - subTextureHeight) / textureHeight);
+            glm::vec2 rightTopUV(static_cast<float>(currentTextureOffsetX + subTextureHeight) / textureWidth, static_cast<float>(currentTextureOffsetY) / textureHeight);
+            pTexture->addSubTexture(std::move(currenSubTextureName), leftBottomUV, rightTopUV);
+
+            currentTextureOffsetX += subTexturewidth;
+            if (currentTextureOffsetX >= textureWidth)
+            {
+                currentTextureOffsetX = 0;
+                currentTextureOffsetY -= subTextureHeight;
+            }
+        }
+    }
+    return pTexture;
 }

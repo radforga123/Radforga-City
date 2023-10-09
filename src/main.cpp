@@ -5,11 +5,13 @@
 #include <glm/gtc/matrix_transform.hpp>
 
 #include <iostream>
+#include <chrono>
 
 #include "Renderer/ShaderProgram.h"
 #include "Resources/ResourceManager.h"
 #include "Renderer/Texture2D.h"
 #include "Renderer/Sprite.h"
+#include "Renderer/AnimatedSprite.h"
 
 GLfloat point[] = {
     0.0f, 100.f, 0.0f,
@@ -35,6 +37,7 @@ GLfloat texCoord[] = {
 
 glm::ivec2 g_WindowSize(640, 480);
 
+bool isEagle = false;
 void glfwWindowSizeCallBack(GLFWwindow *pWindow, int width, int height)
 {
     g_WindowSize.x = width;
@@ -47,6 +50,10 @@ void glfwKeyCallBack(GLFWwindow *pWindow, int key, int scancode, int action, int
     if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS)
     {
         glfwSetWindowShouldClose(pWindow, GL_TRUE);
+    }
+    if (key == GLFW_KEY_ENTER && action == GLFW_PRESS)
+    {
+        isEagle = !isEagle;
     }
 }
 int main(int argc, char **argv)
@@ -111,8 +118,59 @@ int main(int argc, char **argv)
 
         auto tex = resourceManager.loadTextures("DefaultTexture", "res/textures/map_16x16.png");
 
-        auto pSprite = resourceManager.loadSprite("NewSprite", "DefaultTexture", "SpriteShader", 100, 100, 90);
-        pSprite->setPosition(glm::vec2(300, 100));
+        std::vector<std::string> SubTexturesName = {"BrickWall",
+                                                    "topBrick",
+                                                    "botBrick",
+                                                    "leftBrick",
+                                                    "rightBrick",
+                                                    "topLeftBrick",
+                                                    "topRightBrick",
+                                                    "BotLeftBrick",
+                                                    "botRightBrick",
+                                                    "IronWall",
+                                                    "topIronWall",
+                                                    "bottomIronWall",
+                                                    "leftIronWall",
+                                                    "rightIronWall",
+                                                    "topLeftIronWall",
+                                                    "topRightIronWall",
+
+                                                    "bottomLeftIronWall",
+                                                    "bottomRightIronWall",
+                                                    "water1",
+                                                    "water2",
+                                                    "water3",
+                                                    "trees",
+                                                    "ice",
+                                                    "wall",
+
+                                                    "eagle",
+                                                    "deadEagle",
+                                                    "nothing",
+                                                    "respawn1",
+                                                    "respawn2",
+                                                    "respawn3",
+                                                    "respawn4"};
+        auto pTextureAtlas = resourceManager.loadTextureAtlas("DefaultTextureAtlas", "res/textures/map_16x16.png", std::move(SubTexturesName), 16, 16);
+
+        auto pSprite = resourceManager.loadSprite("NewSprite", "DefaultTextureAtlas", "SpriteShader", 100, 100, 0, "IronWall");
+        pSprite->setPosition(glm::vec2(250, 100));
+
+        auto pAnimatedSprite = resourceManager.loadAnimatedSprite("NewAnimatedSprite", "DefaultTextureAtlas", "SpriteShader", 100, 100, 0, "IronWall");
+        pAnimatedSprite->setPosition(glm::vec2(300, 300));
+        std::vector<std::pair<std::string, uint64_t>> waterState;
+        waterState.emplace_back(std::pair<std::string, uint64_t>("water1", 1000000000));
+        waterState.emplace_back(std::pair<std::string, uint64_t>("water2", 1000000000));
+        waterState.emplace_back(std::pair<std::string, uint64_t>("water3", 1000000000));
+
+        std::vector<std::pair<std::string, uint64_t>> eagleState;
+        eagleState.emplace_back(std::pair<std::string, uint64_t>("eagle", 1000000000));
+        eagleState.emplace_back(std::pair<std::string, uint64_t>("deadEagle", 1000000000));
+
+        pAnimatedSprite->insertState("waterState", std::move(waterState));
+        pAnimatedSprite->insertState("eagleState", std::move(eagleState));
+
+        pAnimatedSprite->setState("waterState");
 
         GLuint points_vbo = 0;
         glGenBuffers(1, &points_vbo);
@@ -162,9 +220,25 @@ int main(int argc, char **argv)
         pSpriteShaderProgram->setInt("tex", 0);
         pSpriteShaderProgram->setMatrix4("projectionMat", projectionMatrix);
 
+        auto lastTime = std::chrono::high_resolution_clock::now();
         /* Loop until the user closes the window */
         while (!glfwWindowShouldClose(PWWindow))
         {
+            if (isEagle)
+            {
+                pAnimatedSprite->setState("eagleState");
+            }
+            else
+            {
+                pAnimatedSprite->setState("waterState");
+            }
+
+            auto curentTime = std::chrono::high_resolution_clock::now();
+            uint64_t duration = std::chrono::duration_cast<std::chrono::nanoseconds>(curentTime - lastTime).count();
+            lastTime = curentTime;
+
+            pAnimatedSprite->update(duration);
+
             /* Render here */
             glClear(GL_COLOR_BUFFER_BIT);
 
@@ -179,6 +253,8 @@ int main(int argc, char **argv)
             glDrawArrays(GL_TRIANGLES, 0, 3);
 
             pSprite->render();
+
+            pAnimatedSprite->render();
 
             /* Swap front and back buffers */
             glfwSwapBuffers(PWWindow);
