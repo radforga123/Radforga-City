@@ -1,6 +1,6 @@
 #pragma once
 
-#include <E:/C++PRJ/battle-city/external/glad/include/glad/glad.h>
+#include <glad/glad.h>
 #include <glm/vec2.hpp>
 #include <string>
 #include <map>
