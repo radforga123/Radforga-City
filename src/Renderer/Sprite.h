@@ -22,8 +22,7 @@ namespace Renderer
         GLuint m_VAO;
         GLuint m_vertexCoordsVBO;
         GLuint m_textureCoordsVBO;
-        glm::vec2 m_CurrentLeftBottomUV;
-        glm::vec2 m_CurrentRightTopUV;
+        GLuint m_EBO;
 
     public:
         Sprite(std::shared_ptr<Texture2D> pTexture,
