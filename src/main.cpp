@@ -4,22 +4,19 @@
 
 #include "Game/Game.h"
 #include "Resources/ResourceManager.h"
-
+#include "Renderer/Renderer.h"
 
 #include <iostream>
 #include <chrono>
 
-
-
-glm::ivec2 g_WindowSize(640, 480);
-Game g_Game(g_WindowSize);
-
+glm::ivec2 g_WindowSize(13 * 16, 14 * 16);
+std::unique_ptr<Game> g_Game = std::make_unique<Game>(g_WindowSize);
 
 void glfwWindowSizeCallBack(GLFWwindow *pWindow, int width, int height)
 {
     g_WindowSize.x = width;
     g_WindowSize.y = height;
-    glViewport(0, 0, width, height);
+    RenderEngine::Renderer::setViewport(width, height);
 }
 
 void glfwKeyCallBack(GLFWwindow *pWindow, int key, int scancode, int action, int mode)
@@ -28,7 +25,7 @@ void glfwKeyCallBack(GLFWwindow *pWindow, int key, int scancode, int action, int
     {
         glfwSetWindowShouldClose(pWindow, GL_TRUE);
     }
-    g_Game.setKey(key,action);
+    g_Game->setKey(key, action);
 }
 int main(int argc, char **argv)
 {
@@ -67,40 +64,40 @@ int main(int argc, char **argv)
         return -1;
     }
 
-    std::cout << "Renderer " << glGetString(GL_RENDERER) << std::endl;
-    std::cout << "OpenGL Version " << glGetString(GL_VERSION) << std::endl;
+    std::cout << "Renderer " << RenderEngine::Renderer::getRendererSTR << std::endl;
+    std::cout << "OpenGL Version " << RenderEngine::Renderer::getVersionSTR << std::endl;
 
     std::cout << "Opengl " << GLVersion.major << "." << GLVersion.minor << std::endl;
 
-    glClearColor(0, 0, 0, 1);
+    RenderEngine::Renderer::setClearColor(0, 0, 0, 1);
 
     {
         ResourceManager::setExecutablePath(argv[0]);
-        g_Game.init();
+        g_Game->init();
 
         auto lastTime = std::chrono::high_resolution_clock::now();
         /* Loop until the user closes the window */
         while (!glfwWindowShouldClose(PWWindow))
         {
 
+            /* Poll for and process events */
+            glfwPollEvents();
+
             auto curentTime = std::chrono::high_resolution_clock::now();
             uint64_t duration = std::chrono::duration_cast<std::chrono::nanoseconds>(curentTime - lastTime).count();
             lastTime = curentTime;
-            g_Game.update(duration);
-
+            g_Game->update(duration);
 
             /* Render here */
-            glClear(GL_COLOR_BUFFER_BIT);
+            RenderEngine::Renderer::clear();
 
-            g_Game.render();
+            g_Game->render();
             /* Swap front and back buffers */
             glfwSwapBuffers(PWWindow);
-
-            /* Poll for and process events */
-            glfwPollEvents();
         }
+        g_Game = nullptr;
+        ResourceManager::unloadAllRecources();
     }
-    ResourceManager::unloadAllRecources();
     glfwTerminate();
     return 0;
 }

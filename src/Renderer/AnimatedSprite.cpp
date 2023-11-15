@@ -1,15 +1,12 @@
 #include "AnimatedSprite.h"
 #include "Texture2D.h"
 #include "iostream"
-namespace Renderer
+namespace RenderEngine
 {
     AnimatedSprite::AnimatedSprite(std::shared_ptr<Texture2D> pTexture,
                                    std::string initialSubTexture,
-                                   std::shared_ptr<ShaderProgram> pShaderProgram,
-                                   const glm::vec2 &position,
-                                   const glm::vec2 &size,
-                                   const float &rotation)
-        : Sprite(std::move(pTexture), std::move(initialSubTexture), std::move(pShaderProgram), position, size, rotation)
+                                   std::shared_ptr<ShaderProgram> pShaderProgram)
+        : Sprite(std::move(pTexture), std::move(initialSubTexture), std::move(pShaderProgram))
     {
         m_pCurrentAnimationDuration = m_statesMape.end();
     }
@@ -56,7 +53,7 @@ namespace Renderer
         }
     }
 
-    void AnimatedSprite::render() const
+    void AnimatedSprite::render(const glm::vec2 &position, const glm::vec2 size, const float rotation) const
     {
         if (m_dirty = true)
         {
@@ -64,18 +61,23 @@ namespace Renderer
 
             const GLfloat textureCoords[] = {
 
-            subTexture.leftBottomUV.x, subTexture.leftBottomUV.y,
-            subTexture.leftBottomUV.x, subTexture.rightTopUV.y,
-            subTexture.rightTopUV.x, subTexture.rightTopUV.y,
-            subTexture.rightTopUV.x, subTexture.leftBottomUV.y,};
+                subTexture.leftBottomUV.x,
+                subTexture.leftBottomUV.y,
+                subTexture.leftBottomUV.x,
+                subTexture.rightTopUV.y,
+                subTexture.rightTopUV.x,
+                subTexture.rightTopUV.y,
+                subTexture.rightTopUV.x,
+                subTexture.leftBottomUV.y,
+            };
 
-            glBindBuffer(GL_ARRAY_BUFFER, m_textureCoordsVBO);
-            
+            m_textureCoordsBuffer.update(textureCoords, 2 * 4 * sizeof(GLfloat));
+
             glBufferSubData(GL_ARRAY_BUFFER, 0, sizeof(textureCoords), &textureCoords);
             glBindBuffer(GL_ARRAY_BUFFER, 0);
             m_dirty = false;
         }
 
-        Sprite::render();
+        Sprite::render(position, size, rotation);
     }
 }
